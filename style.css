@@ -1,7 +1,20 @@
-body{
-	margin: 0;
+@font-face{
+	font-family: BreeSerif-Regular;
+	src: url('font/BreeSerif-Regular.ttf');
 }
 
+body{
+	margin: 0;
+	background-color: #ECEFF1;
+	font-size: 1.1em;
+}
+
+#wrapper{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
 /*HEADER*/
 
 header{
@@ -9,16 +22,73 @@ header{
 	flex-direction: row;
 }
 
+#photo{
+	width: 30%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+#photo img{
+	border-radius: 20%;
+}
+
+#titre{
+	width: 70%;
+}
+
+h1{
+	font-family: BreeSerif-Regular;
+	font-size: 3em;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
 /*MAIN*/
+main{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+#cv{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0px 50px 0px 50px;
+}
 
 /*SECTION 1*/
 
 /*SECTION 2*/
 
 /*ASIDE*/
+aside{
+	width: 30%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
 
+h3{
+	font-family: cursive;
+	text-align: center;
+}
 /*NAV*/
+nav ul li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+nav a{
+	text-decoration: none;
+}
 
 /*A PROPOS*/
 
 /*FOOTER*/
+#icones{
+	display: flex;
+	justify-content: space-around;
+}
